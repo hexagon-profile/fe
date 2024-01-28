@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { LoginPage } from "./pages/login/LoginPage";
 import BoardPage from "./pages/board/BoardPage";
 import BoardContainer from "./pages/board/BoardContainer";
-import Chart from "./pages/board/Chart";
+import RegisterPointPage from "./pages/register-point/RegisterPointPage";
 
 const App = (): ReactElement => {
   return (
@@ -13,7 +13,7 @@ const App = (): ReactElement => {
         <Route path="/" element={<LoginPage />}></Route>
         <Route path="/board" element={<BoardPage />}></Route>
         <Route path="/boards/:id" element={<BoardContainer />} />
-        <Route path="/chart" element={<Chart />} />
+        <Route path="/register-point" element={<RegisterPointPage />} />
       </Routes>
     </BrowserRouter>
   );
