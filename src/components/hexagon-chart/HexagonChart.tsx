@@ -16,7 +16,7 @@ const HexagonChart: FC<HexagonChartProps> = (props) => {
       maxValue={100}
       gridShape="linear"
       data={data}
-      //   keys={["me", "others"]}
+      // keys={["me", "others"]}
       keys={[]}
       indexBy="keyword"
       valueFormat=">-.2f"
