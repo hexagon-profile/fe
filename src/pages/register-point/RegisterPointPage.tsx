@@ -2,6 +2,7 @@ import { FC } from "react";
 import HexagonChart from "../../components/hexagon-chart/HexagonChart";
 import "./RegisterPointPage.scss";
 import { useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
 
 interface RegisterPointPageProps {}
 
@@ -60,7 +61,9 @@ const RegisterPointPage: FC<RegisterPointPageProps> = (props) => {
         <input placeholder="키워드5" />
         <input placeholder="키워드6" />
       </div>
-      <button onClick={() => navigate("/share")}>다음</button>
+      <Button variant="primary" onClick={() => navigate("/share")}>
+        다음
+      </Button>
     </div>
   );
 };
